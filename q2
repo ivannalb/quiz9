@@ -1,0 +1,20 @@
+//q2
+#include <iostream>
+#include <cmath>
+using namespace std;
+long superpower (long val, long pow=0){
+	if (pow <=0)
+	return 1;
+	return val *superpower(val, pow-1);
+
+}
+int main (){
+	long pow, value;
+	cout << "enter the number" << endl;
+	cin>> value;
+	cout << "enter power:" << endl;
+	cin>> pow;
+	cout <<endl;
+	cout << "result is: "<< superpower (value,pow) << endl;
+	return 0;
+}
